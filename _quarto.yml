@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: docs
+
+
+website:
+  title: "Muhammad Badr ABU SALIH"
+  site-url: 'https://abusalih.com/'
+  site-path: '/'
+  favicon: /assets/images/favicon-96.png
+  search: false
+  navbar:
+    title: "M.B. Abu Salih"
+    background: primary
+    search: false
+    right:
+      - href: index.qmd
+        text: Home
+#      - about.qmd
+      - href: ma-thesis.qmd
+        text: Thesis
+      - href: teaching.qmd
+        text: Teaching
+      - href: resources.qmd
+        text: Resources
+  page-footer:
+    background: light
+    border: true
+    center: 
+      - text: "© 2026 Muhammad Badr ABU SALIH"
+
+
+format:
+  html:
+    theme: theme.scss
+#    mainfont: Source Sans Pro
+    page-layout: full
+    include-in-header:
+      - text: <meta name="google-site-verification" content="IsH7WWWy8e3yEqVgqZTDa41IrthkspiDjTShEE3wRg8" />
+
+
+execute:
+  freeze: auto
